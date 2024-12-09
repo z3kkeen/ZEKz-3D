@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useGraph } from '@react-three/fiber';
 import { useGLTF, useAnimations } from '@react-three/drei';
-import { SkeletonUtils } from 'three-stdlib';
+import { SkeletonUtils } from 'three/examples/jsm/Addons.js';
 import { Group, SkinnedMesh } from 'three';
 import { GroupProps } from '@react-three/fiber';
 
