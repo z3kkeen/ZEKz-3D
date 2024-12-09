@@ -2,13 +2,14 @@
 import React, { useRef } from "react";
 import { useFrame } from "@react-three/fiber";
 import { OrbitControls } from '@react-three/drei';
+import { Mesh } from "three";
 
 type CubeProps = {
     visible: boolean;
 };
 
 export default function Cube({ visible }: CubeProps) {
-    const cubeRef = useRef();
+    const cubeRef = useRef<Mesh | null>(null);
     
     useFrame(() => {
         if(cubeRef.current) {
